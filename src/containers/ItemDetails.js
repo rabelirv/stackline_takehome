@@ -12,9 +12,9 @@ function ItemDetails({image,title,subtitle, tags}){
 }
 
 function Tags({tags}){
-    const tagButtons = tags.map(tag => <div className="border border-slate-500 rounded max-w-fit px-4"><p>{tag}</p></div>)
+    const tagButtons = tags.map(tag => <div className="border border-slate-300 rounded max-w-fit px-4"><p className="text-xs">{tag}</p></div>)
     return (
-        <div className="border-y border-slate-300 w-full px-6">
+        <div className="border-y border-slate-300 w-full flex flex-row flex-wrap py-2 gap-2 px-2">
             {tagButtons}
         </div>
     )
