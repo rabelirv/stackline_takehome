@@ -14,7 +14,7 @@ function ItemHistory({sales}){
 
 function Heading(){
     return(
-        <div className="flex flex-row w-full justify-between px-8 py-6 uppercase text-xs border-b-2">
+        <div className="grid grid-cols-5 gap-4 w-full  px-8 py-6 uppercase text-xs border-b-2">
             <div className="flex flex-row items-center">
                 <p>Week Ending</p>
                 <ChevronDown className="h-5 w-5 text-gray-300"/>
@@ -48,7 +48,7 @@ function Row({weekEnding,retailSale,wholesaleSale,unitsSold,retailerMargin}){
     const formattedWS = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'}).format(wholesaleSale);
     const formattedRM = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'}).format(retailerMargin);
     return(
-        <div className="flex flex-row w-full px-8 py-6 uppercase text-xs border-b-2 text-gray-400 justify-between">
+        <div className="grid grid-cols-5 gap-4 w-full px-8 py-6 uppercase text-xs border-b-2 text-gray-400 ">
             <p>{formattedDate}</p>
             <p>{formattedRS}</p>
             <p>{formattedWS}</p>

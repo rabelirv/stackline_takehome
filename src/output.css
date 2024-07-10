@@ -595,6 +595,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -711,6 +715,10 @@ video {
   max-width: fit-content;
 }
 
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -721,6 +729,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.content-start {
+  align-content: flex-start;
 }
 
 .items-start {
@@ -757,6 +769,18 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-40 {
+  gap: 10rem;
+}
+
+.gap-48 {
+  gap: 12rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {

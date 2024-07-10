@@ -2,6 +2,12 @@ import { LineChart } from '@mui/x-charts/LineChart';
 
 function RetailSalesChart({sales}){
 
+
+    /*TODO: Fix the chart data to display correctly.
+    This componenet was a stretch goal for me. It was the last component of the project and I ran out of time 
+    to properly read the documentation to display the data correctly within the chart.
+    */
+
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
     const retailSales = sales.map((sale) => sale.retailSales)
