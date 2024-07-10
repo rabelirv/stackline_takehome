@@ -4,7 +4,7 @@ function ItemHistory({sales}){
 
     const saleRows = sales.map((sale, i) => <Row key={i} retailSale={sale.retailSales} wholesaleSale={sale.wholesaleSales} unitsSold={sale.unitsSold} retailerMargin={sale.retailerMargin} weekEnding={sale.weekEnding}/>)
     return(
-        <div className="bg-white  flex flex-col w-full">
+        <div className="bg-white flex flex-col w-full">
             <Heading/>
             {saleRows}
         </div>
