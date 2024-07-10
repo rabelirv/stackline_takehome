@@ -5,12 +5,13 @@ import ItemHistory from './componenets/ItemHistory';
 import data from './data/customData.json';
 
 function App() {
+  console.log(data)
   return (
    <div className="w-screen h-screen bg-slate-100">
     <Navbar/>
     <div className="w-full flex flex-row h-full">
       <div className="flex-col w-1/5 justify-center pl-4">
-        <ItemDetails item={data[0]} />
+        <ItemDetails image={data[0].image} title={data[0].title} subtitle={data[0].subtitle} tags={data[0].tags}/>
       </div>
       <div className="flex-col w-4/5 pl-4">
         <ItemHistory/>
